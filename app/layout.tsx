@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${pt_serif.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${pt_serif.variable} max-w-screen-xl mx-auto bg-black`}>{children}</body>
     </html>
   );
 }
