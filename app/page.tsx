@@ -455,6 +455,22 @@ function About() {
   );
 }
 
+function Education() {
+  return (
+    <div className="mt-8 text-gray-50">
+      <h2 className="h2">Education</h2>
+      <div className="mt-2 font-sans font text-gray-300">
+        <p >
+          FSC (Facult of Science) Concoridia College - 2019
+        </p>
+        <p className="mt-2 font-sans font text-gray-300">
+          FSC (Facult of Science) Concoridia College - 2019
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main className="px-4">
