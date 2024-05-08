@@ -85,7 +85,7 @@ function PortfolioCard({
         ) : null}
       </div>
       <p className="text-gray-300 mt-1 text-xs">{subTitle}</p>
-      <div className="mt-2 text-sm text-gray-300">{description}</div>
+      <div className="mt-2 leading-5 text-sm text-gray-300">{description}</div>
     </div>
   );
 }
@@ -192,12 +192,12 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
       <div className="space-y-2">
         <p>
           I was hired again for an Android version of our app. Using React
-          Native paid back back. I implemented a new module for our app, to
-          allow shop keeper to sign as admin and scan products for adminstration
+          Native paid back. I implemented a new module for our app, to allow
+          shop keepers to sign as admin and scan products for administration
           puposes.
         </p>
         <p>
-          Tasked with making our existing React Native Typescript code base
+          Tasked with making our existing React Native Typescript codebase
           cross-platform for Android and publishing app on Playstore.
         </p>
         <p>
@@ -210,14 +210,178 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
   {
     title: "Headless Eccommerce Storefront",
     subTitle: "Panaverse",
-    description: <div></div>,
+    tags: [
+      {
+        children: "Web",
+      },
+      {
+        children: "Source Code",
+        href: "https://github.com/SheryConcepts/shopify-storefront",
+      },
+      {
+        children: "Live",
+        href: "https://shopify-storefront-plum.vercel.app/",
+      },
+    ],
+    description: (
+      <div>
+        <p>
+          As part of a team I was lead backend developer for the project. I was
+          responsible for integrating existing Shopify Headless Storefront
+          frontend code with backend using{" "}
+          <InlineLink href="https://shopify.dev/docs/api/storefront">
+            Shopify Storefront Graphql APIs
+          </InlineLink>
+          .
+        </p>
+        <div className="ml-4">
+          <li>
+            Web app uses{" "}
+            <InlineLink href="http://nextjs.org">Nextjs</InlineLink> for
+            performance and a great dev experience. It is built using the latest
+            NextJs App Directory features.
+          </li>
+          <li>
+            Most interesting part of the project was building a Webhooks system
+            integrating Storefront and Shopify CMS, doing{" "}
+            <InlineLink href="https://nextjs.org/docs/app/building-your-application/caching">
+              Nextjs Cache
+            </InlineLink>{" "}
+            revalidation and streaming incremental segments of UI from Server,
+            resulting in perfomance and better User Experience.
+          </li>
+          <li>
+            <InlineLink href="http://vercel.com">Vercel</InlineLink> is used for
+            Serverless Deployment Infrastructure.
+          </li>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Eccommerce Hackathon",
+    subTitle: "Panaverse",
+    tags: [
+      {
+        children: "Web",
+      },
+      {
+        children: "Live Site",
+        href: "https://hackathon-drab.vercel.app",
+      },
+      {
+        children: "Source Code",
+        href: "https://github.com/SheryConcepts/panaverse_hackathon",
+      },
+    ],
+    description: (
+      <div>
+        <p>
+          I participated in a Hackathon at Panaverse for building an Open Source
+          Eccommerce using the described tech stack. Participants were given 1
+          week to learn the relevant tech and implement a complete functioning
+          Eccomerce Store.
+        </p>
+        <div className="ml-4">
+          <li>
+            Project involved building frontend, backend, payments and a CMS for
+            the Store.
+          </li>
+          <li>
+            <InlineLink href="http://nextjs.org">Nextjs</InlineLink> a{" "}
+            <InlineLink href="http://react.dev">React</InlineLink> framework
+            with{" "}
+            <InlineLink href="https://www.typescriptlang.org">
+              Typescript
+            </InlineLink>{" "}
+            for a modular and typesafe codebase.
+          </li>
+          <li>
+            <InlineLink href="http://sanity.io">Sanity</InlineLink> was used for
+            Content Management.{" "}
+            <InlineLink href="http://clerk.com">Clerk</InlineLink> for
+            Authorization and Authenctication.{" "}
+            <InlineLink href="https://orm.drizzle.team/">
+              Drizzle ORM
+            </InlineLink>{" "}
+            with PostgresSQL database.
+          </li>
+          <li>
+            <InlineLink href="http://stripe.com">Stripe</InlineLink> was used
+            for hosted payment processing. Site is hosted on Serverless Infra by
+            Vercel.
+          </li>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Blogger",
+    subTitle: "Personal Project",
+    tags: [
+      {
+        children: "Web",
+      },
+      {
+        children: "Live Site",
+        href: "https://blogger-eta-two.vercel.app",
+      },
+      {
+        children: "Source Code",
+        href: "https://github.com/SheryConcepts/blogger",
+      },
+    ],
+    description: (
+      <div>
+        <p>
+          Blogger is a blogging platform readers can read and write blogs. Its
+          admin side allows use manage their account and publish articles in a
+          Markdown based editor. It uses the following tech:
+        </p>
+        <div className="ml-4">
+          <li>
+            <InlineLink href="https://nextjs.org">Nextjs</InlineLink> as
+            Framework.{" "}
+            <InlineLink href="https:prisma.io/orm">Prisma ORM</InlineLink> with
+            PostgresSQL database.
+          </li>
+          <li>
+            <InlineLink href="http://authjs.dev">Authjs</InlineLink> for
+            Authenctication and Authorization.
+          </li>
+          <li>
+            Most fun part of the project was implementing a Markdown based
+            editor for users to write the blogs.
+          </li>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Teacher",
+    subTitle: "Panaverse",
+    description: (
+      <div>
+        <p>
+          I worked as a volunteer teacher for Panavserse. Teaching students how
+          to create Shopify Storefronts as means for Event Driven Architecture.
+          I really enjoyed my experience there.
+        </p>
+        <p className="mt-2">
+          All of my classes were live streamed on{" "}
+          <InlineLink href="https://www.youtube.com/@panaverse">
+            Panaverse Youtube.
+          </InlineLink>
+        </p>
+      </div>
+    ),
   },
 ];
 
 function Portfolio() {
   return (
     <div className="mt-8 text-gray-50">
-      <h2 className="h2">Portfolio</h2>
+      <h2 className="h2">Work</h2>
       {Portfolios.map((i, index) => (
         <PortfolioCard
           key={index}
@@ -270,11 +434,33 @@ function ArrowOutward() {
   );
 }
 
+function About() {
+  return (
+    <div className="mt-8 text-gray-50">
+      <h2 className="h2">About</h2>
+      <p className="mt-2 font-sans font text-gray-300">
+        Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
+        enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
+        exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+        nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
+        minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure
+        elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor
+        Lorem duis laboris cupidatat officia voluptate. Culpa proident
+        adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
+        Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+        Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
+        et culpa duis.
+      </p>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main className="px-4">
       <Header />
       <Hero />
+      <About />
       <Portfolio />
     </main>
   );
