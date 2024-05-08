@@ -476,7 +476,6 @@ function About() {
           <div className="flex ml-4 gap-x-2 flex-start items-start flex-row">
             <Tag>Rust</Tag>
             <Tag>Go</Tag>
-            <Tag>React</Tag>
           </div>
         </div>
       </div>
