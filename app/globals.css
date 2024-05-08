@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  zoom: 120%;
-}
-
 @layer components {
   .h1 {
     @apply text-4xl md:text-6xl font-serif;
