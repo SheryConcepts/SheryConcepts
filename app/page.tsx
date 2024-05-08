@@ -438,33 +438,63 @@ function About() {
   return (
     <div className="mt-8 text-gray-50">
       <h2 className="h2">About</h2>
-      <p className="mt-2 font-sans font text-gray-300">
-        Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-        enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-        exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
-        nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
-        minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure
-        elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor
-        Lorem duis laboris cupidatat officia voluptate. Culpa proident
-        adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
-        Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-        Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
-        et culpa duis.
-      </p>
+      <div className="mt-2 space-y-4 font-sans font text-gray-300">
+        <div className="flex gap-x-4 flex-start items-start flex-row">
+          <Tag href="mailto:chsheharyarahmed@gmail.com">
+            chsheharyarahmed@gmail.com
+          </Tag>
+          <Tag>+92-313-877-482</Tag>
+        </div>
+        <p>
+          I started my programming journey 4 years ago when I wanted to learn
+          how Computers work. Since then it has been a tough love.
+        </p>
+        <p>
+          I have been working professionally for 2 years. During these 2 years I
+          have built all kind of Software from Mobile App, Web apps to CLI Apps
+          and APIs
+        </p>
+        <div className="space-y-2">
+          <p>I am proficient in:</p>
+          <div className="flex ml-4 gap-x-2 flex-start items-start flex-row">
+            <Tag>Typescript</Tag>
+            <Tag>Javascript</Tag>
+            <Tag>React</Tag>
+            <Tag>React Native</Tag>
+            <Tag>Nextjs</Tag>
+            <Tag>Databases</Tag>
+            <Tag>Python</Tag>
+            <Tag>CSS</Tag>
+            <Tag>HTML</Tag>
+            <Tag>AWS</Tag>
+            <Tag>Serverless</Tag>
+            <Tag>IaC</Tag>
+          </div>
+        </div>
+        <div className="space-y-2">
+          <p>Tinkering with:</p>
+          <div className="flex ml-4 gap-x-2 flex-start items-start flex-row">
+            <Tag>Rust</Tag>
+            <Tag>Go</Tag>
+            <Tag>React</Tag>
+          </div>
+        </div>
+      </div>
+      <p></p>
     </div>
   );
 }
 
 function Education() {
   return (
-    <div className="mt-8 text-gray-50">
+    <div className="mt-8 text-gray-50 pb-8">
       <h2 className="h2">Education</h2>
-      <div className="mt-2 font-sans font text-gray-300">
-        <p >
-          FSC (Facult of Science) Concoridia College - 2019
-        </p>
-        <p className="mt-2 font-sans font text-gray-300">
-          FSC (Facult of Science) Concoridia College - 2019
+      <div className="mt-4 text-sm space-y-1 font-sans font text-gray-300">
+        <p>Facult of Science, FSC (2017-2019) - Concordia College</p>
+        <p>PIAIC (2022-2024)</p>
+        <p>
+          Bachelor of Computer Science (2024-2027) - Virtual University of
+          Pakistan.
         </p>
       </div>
     </div>
@@ -478,6 +508,7 @@ export default function Home() {
       <Hero />
       <About />
       <Portfolio />
+      <Education />
     </main>
   );
 }
