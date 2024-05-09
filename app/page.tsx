@@ -443,22 +443,19 @@ function About() {
           <Tag href="mailto:chsheharyarahmed@gmail.com">
             chsheharyarahmed@gmail.com
           </Tag>
-          <Tag>+92-313-877-482</Tag>
         </div>
         <p>
-          I started my programming journey 4 years ago when I wanted to learn
-          how Computers work. Since then it has been a tough love.
-        </p>
-        <p>
-          I have been working professionally for 2 years. During these 2 years I
-          have built all kind of Software from Mobile App, Web apps to CLI Apps
-          and APIs
+          I am a passionate and experienced Software Developer building Mobile
+          Apps and Web apps. Having worked in teams as well as solo developer
+          for companies, enables me to bootstrap technical systems and work efficiently with
+          existing ones.
         </p>
         <div className="space-y-2">
           <p>I am proficient in:</p>
-          <div className="flex ml-4 gap-x-2 flex-start items-start flex-row">
+          <div className="flex ml-4 gap-y-2 flex-wrap gap-x-2 flex-start items-start flex-row">
             <Tag>Typescript</Tag>
-            <Tag>Javascript</Tag>
+            <Tag>Javascript (Node.js)</Tag>
+            <Tag>Javascript (Browsers)</Tag>
             <Tag>React</Tag>
             <Tag>React Native</Tag>
             <Tag>Nextjs</Tag>
@@ -507,7 +504,6 @@ export default function Home() {
       <Hero />
       <About />
       <Portfolio />
-      <Education />
     </main>
   );
 }
