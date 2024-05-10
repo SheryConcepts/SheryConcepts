@@ -40,7 +40,7 @@ function Header() {
       >
         Github
       </HeaderButton>
-      <HeaderButton href={{ path: "https://google.com", targetBlank: true }}>
+      <HeaderButton href={{ path: "/resume.pdf", targetBlank: true }}>
         Resume
       </HeaderButton>
     </div>
@@ -155,7 +155,7 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
           </li>
           <li>
             Backend of the app was a bit tricky to implement, because it also
-            involved CMS for Shop Owners to manager their Inventory.{" "}
+            involved CMS for Shop Owners to manag their Inventory.{" "}
             <InlineLink href={"https://www.odoo.com/"}>Odoo</InlineLink> was
             used for this purpose. Odoo was integrated into our backend with
             APIs. <InlineLink href={"https://nextjs.org"}>Nextjs</InlineLink>{" "}
@@ -406,7 +406,7 @@ function Tag({
 }) {
   return href ? (
     <Link
-      className="cursor-pointer flex flex-row justify-start items-center md:p-[3px] p-[2px] text-xs text-gray-300  rounded-sm bg-gray-800 ring-gray-600 ring-1"
+      className="cursor-pointer flex flex-row justify-start items-center md:p-[3px] p-[2px] text-xs text-gray-300  rounded-sm bg-purple-800/50 ring-purple-300 "
       href={href}
       target="_blank"
     >
@@ -447,8 +447,8 @@ function About() {
         <p>
           I am a passionate and experienced Software Developer building Mobile
           Apps and Web apps. Having worked in teams as well as solo developer
-          for companies, enables me to bootstrap technical systems and work efficiently with
-          existing ones.
+          for companies, enables me to bootstrap technical systems and work
+          efficiently with existing ones.
         </p>
         <div className="space-y-2">
           <p>I am proficient in:</p>
