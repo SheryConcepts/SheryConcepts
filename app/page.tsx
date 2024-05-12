@@ -117,25 +117,32 @@ InlineLink.displayName = "InlineLink";
 
 const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
   {
-    subTitle: "Huma Productions",
+    subTitle: "Huma Productions (August 2023 - January 2024)",
     title: "Contactless Checkout",
     tags: [
       {
         children: "iOS",
       },
+      {
+        children: "Android",
+      },
       { children: "Mobile" },
       {
-        children: "Live",
+        children: "Live (iOS)",
         href: "https://apps.apple.com/us/app/huma-contactless/id6478042324",
+      },
+      {
+        children: "Live (Android)",
+        href: "https://play.google.com/store/apps/details?id=com.huma.contactless",
       },
     ],
     description: (
       <div>
         <p>
-          Huma Contactless for iOS is a hassle-free self checkout app. It helps
-          Shoppers find, scan, pay (self checkout) and manage their groceries. I
-          was the hired as a solo developer by Huma Productions to turn their
-          idea into reality.
+          Huma Contactless for iOS and Android is a hassle-free self checkout
+          app. It helps Shoppers find, scan, pay (self checkout) and manage
+          their groceries. I was the hired as a solo developer by Huma
+          Productions to turn their idea into reality.
         </p>
         <div className="ml-4">
           <li>
@@ -172,44 +179,60 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
             for implementing Payments for our platform.
           </li>
         </div>
+        <div className="space-y-2 mt-2">
+          <p>
+            I was hired again for an Android version of our app. Using React
+            Native paid back. I implemented a new module for our app, to allow
+            shop keepers to sign as admin and scan products for administration
+            puposes.
+          </p>
+          <li>
+            Tasked with making our existing React Native Typescript codebase
+            cross-platform for Android and publishing app on Playstore.
+          </li>
+          <li>
+            Most challenging task was making iOS Product Scanner compatible with
+            Android.
+          </li>
+        </div>
       </div>
     ),
   },
-  {
-    title: "Contactless Checkout",
-    subTitle: "Huma Productions",
-    tags: [
-      {
-        children: "Android",
-      },
-      { children: "Mobile" },
-      {
-        children: "Live",
-        href: "https://play.google.com/store/apps/details?id=com.huma.contactless",
-      },
-    ],
-    description: (
-      <div className="space-y-2">
-        <p>
-          I was hired again for an Android version of our app. Using React
-          Native paid back. I implemented a new module for our app, to allow
-          shop keepers to sign as admin and scan products for administration
-          puposes.
-        </p>
-        <p>
-          Tasked with making our existing React Native Typescript codebase
-          cross-platform for Android and publishing app on Playstore.
-        </p>
-        <p>
-          Most challenging task was making iOS Product Scanner compatible with
-          Android.
-        </p>
-      </div>
-    ),
-  },
+  // {
+  //   title: "Contactless Checkout",
+  //   subTitle: "Huma Productions",
+  //   tags: [
+  //     {
+  //       children: "Android",
+  //     },
+  //     { children: "Mobile" },
+  //     {
+  //       children: "Live",
+  //       href: "https://play.google.com/store/apps/details?id=com.huma.contactless",
+  //     },
+  //   ],
+  //   description: (
+  //     <div className="space-y-2">
+  //       <p>
+  //         I was hired again for an Android version of our app. Using React
+  //         Native paid back. I implemented a new module for our app, to allow
+  //         shop keepers to sign as admin and scan products for administration
+  //         puposes.
+  //       </p>
+  //       <p>
+  //         Tasked with making our existing React Native Typescript codebase
+  //         cross-platform for Android and publishing app on Playstore.
+  //       </p>
+  //       <p>
+  //         Most challenging task was making iOS Product Scanner compatible with
+  //         Android.
+  //       </p>
+  //     </div>
+  //   ),
+  // },
   {
     title: "Headless Eccommerce Storefront",
-    subTitle: "Panaverse",
+    subTitle: "Panaverse (September 2023 - December 2023)",
     tags: [
       {
         children: "Web",
@@ -260,7 +283,7 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
   },
   {
     title: "Eccommerce Hackathon",
-    subTitle: "Panaverse",
+    subTitle: "Panaverse (April 2023 - May 2023)",
     tags: [
       {
         children: "Web",
@@ -325,8 +348,7 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
   //     {
   //       children: "Live Site",
   //       href: "https://blogger-eta-two.vercel.app",
-  //     },
-  //     {
+  //     }, {
   //       children: "Source Code",
   //       href: "https://github.com/SheryConcepts/blogger",
   //     },
@@ -359,7 +381,7 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
   // },
   {
     title: "Teacher",
-    subTitle: "Panaverse",
+    subTitle: "Panaverse (November 2023 - December 2023)",
     description: (
       <div>
         <p>
