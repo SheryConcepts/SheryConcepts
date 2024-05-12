@@ -315,48 +315,48 @@ const Portfolios: Array<Parameters<typeof PortfolioCard>[0]> = [
       </div>
     ),
   },
-  {
-    title: "Blogger",
-    subTitle: "Personal Project",
-    tags: [
-      {
-        children: "Web",
-      },
-      {
-        children: "Live Site",
-        href: "https://blogger-eta-two.vercel.app",
-      },
-      {
-        children: "Source Code",
-        href: "https://github.com/SheryConcepts/blogger",
-      },
-    ],
-    description: (
-      <div>
-        <p>
-          Blogger is a blogging platform readers can read and write blogs. Its
-          admin side allows use manage their account and publish articles in a
-          Markdown based editor. It uses the following tech:
-        </p>
-        <div className="ml-4">
-          <li>
-            <InlineLink href="https://nextjs.org">Nextjs</InlineLink> as
-            Framework.{" "}
-            <InlineLink href="https:prisma.io/orm">Prisma ORM</InlineLink> with
-            PostgresSQL database.
-          </li>
-          <li>
-            <InlineLink href="http://authjs.dev">Authjs</InlineLink> for
-            Authenctication and Authorization.
-          </li>
-          <li>
-            Most fun part of the project was implementing a Markdown based
-            editor for users to write the blogs.
-          </li>
-        </div>
-      </div>
-    ),
-  },
+  // {
+  //   title: "Blogger",
+  //   subTitle: "Personal Project",
+  //   tags: [
+  //     {
+  //       children: "Web",
+  //     },
+  //     {
+  //       children: "Live Site",
+  //       href: "https://blogger-eta-two.vercel.app",
+  //     },
+  //     {
+  //       children: "Source Code",
+  //       href: "https://github.com/SheryConcepts/blogger",
+  //     },
+  //   ],
+  //   description: (
+  //     <div>
+  //       <p>
+  //         Blogger is a blogging platform readers can read and write blogs. Its
+  //         admin side allows use manage their account and publish articles in a
+  //         Markdown based editor. It uses the following tech:
+  //       </p>
+  //       <div className="ml-4">
+  //         <li>
+  //           <InlineLink href="https://nextjs.org">Nextjs</InlineLink> as
+  //           Framework.{" "}
+  //           <InlineLink href="https:prisma.io/orm">Prisma ORM</InlineLink> with
+  //           PostgresSQL database.
+  //         </li>
+  //         <li>
+  //           <InlineLink href="http://authjs.dev">Authjs</InlineLink> for
+  //           Authenctication and Authorization.
+  //         </li>
+  //         <li>
+  //           Most fun part of the project was implementing a Markdown based
+  //           editor for users to write the blogs.
+  //         </li>
+  //       </div>
+  //     </div>
+  //   ),
+  // },
   {
     title: "Teacher",
     subTitle: "Panaverse",
@@ -454,12 +454,15 @@ function About() {
           <p>I am proficient in:</p>
           <div className="flex ml-4 gap-y-2 flex-wrap gap-x-2 flex-start items-start flex-row">
             <Tag>Typescript</Tag>
-            <Tag>Javascript (Node.js)</Tag>
-            <Tag>Javascript (Browsers)</Tag>
+            <Tag>Node.js</Tag>
+            <Tag>Javascript</Tag>
             <Tag>React</Tag>
             <Tag>React Native</Tag>
             <Tag>Nextjs</Tag>
-            <Tag>Databases</Tag>
+            <Tag>PostgresSQL</Tag>
+            <Tag>MySQL</Tag>
+            <Tag>MongoDB</Tag>
+            <Tag>Firestore DB</Tag>
             <Tag>Python</Tag>
             <Tag>CSS</Tag>
             <Tag>HTML</Tag>
